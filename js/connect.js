@@ -7,15 +7,7 @@
  */
 
 const socketURL = `https://${Init.cluster}.${Init.domain}:443`
-// if (Init.room == 1) {
-// 	socketURL = "https://latency.maximetouroute.com:443"
-// } else if (Init.room == 2) {
-// 	socketURL = "https://haut.maximetouroute.com:443"
-// } else if (Init.room == 3) {
-// 	socketURL = "http://192.168.4.23:3005"
-// } else {
-// 	socketURL = "https://latency.maximetouroute.com:443"
-// }
+
 
 const socket = io(socketURL)
 
