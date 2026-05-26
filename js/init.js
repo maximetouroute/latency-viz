@@ -10,6 +10,8 @@ const queryString = window.location.search
 const urlParams = new URLSearchParams(queryString)
 
 let Init = {}
+Init.cluster = urlParams.get("cluster");
+Init.domain = urlParams.get("domain") || 'maximetouroute.com'
 Init.room = urlParams.get("room")
 Init.viz = urlParams.get("viz")
 Init.fullscreen = urlParams.get("fullscreen")
