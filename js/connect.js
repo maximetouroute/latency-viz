@@ -54,10 +54,16 @@ socket.on('connect', () => {
 				Bub.updateLivermakerControls(liveMakerState)
 			})
 		})
+
+
+		// Subscribe to bubbleRoom events
+		socket.emit('ltbr');
+
+		// subscribe to bubbleFrame
+		socket.on('lonbf', (payload) => {
+			Bub.updateFrame(payload.bubble)
+		})
+
 	})
 })
 
-// Full frame
-socket.on('latency_onNewBubbleFrame', (bubbleFrame) => {
-	Bub.updateFrame(bubbleFrame)
-})
