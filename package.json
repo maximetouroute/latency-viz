@@ -8,18 +8,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/maximetouroute/latency-viz.git"
+    "type": "git"
   },
   "keywords": [
     "dance"
   ],
   "author": "Alex Andrix",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/maximetouroute/latency-viz/issues"
-  },
-  "homepage": "https://github.com/maximetouroute/latency-viz#readme",
   "devDependencies": {
     "lite-server": "^2.6.1"
   }
